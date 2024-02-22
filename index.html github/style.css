@@ -1,0 +1,64 @@
+body {
+    font-family:Roboto;
+    background-color: #F5587D;
+    color: #FAF4ED ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:Grenze;
+    font-size:40pt;
+}
+
+header {
+    text-align:center;
+}
+
+#hero, footer{
+    background-color: #91F489; 
+    color:#F5587D ; 
+    border: 8px solid #F5587D; 
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 20px; 
+}
+
+#hero img {
+    width: 300px; 
+    border-radius: 100%; 
+    margin-bottom: 2px;
+}
+
+
+#bio {
+    background-color:#FAF4ED ; 
+    color:#F5587D ; 
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+#bio div {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+
+footer {
+    background-color:#91F489; 
+    color: #F5587D;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    header, #hero, #bio, footer {
+        padding: 40px;
+    }
+
+    #bio div, #hero div {
+        padding: 30px;
+    }
+}
