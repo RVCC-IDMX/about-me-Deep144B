@@ -1,5 +1,3 @@
 # README
 
-My name is DEEP PATEL
-
-
+DEEP PATEL!
