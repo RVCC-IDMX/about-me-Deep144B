@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5587D;
+    color: #FAF4ED;
+    margin: 0;
+    padding: 0;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 30pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header, footer, #hero {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#hero, footer {
+    color: #919191;
+    border: 2px solid #FAF4ED;
+    background-color: #91F489;
+    padding: 20px;
+    margin: auto;
+    max-width: 80%;
+}
+
+#hero img {
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#bio {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+a, button {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover, button:hover {
+    color: #F5587D;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24pt;
+    }
+
+    #hero img {
+        width: 100%;
+    }
+}
+
+
