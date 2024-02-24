@@ -38,7 +38,7 @@ header {
 
 #hero img {
     width: 300px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 #bio {
@@ -56,7 +56,7 @@ a:hover, button:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     h1, h2, h3, h4, h5, h6 {
         font-size: 24pt;
