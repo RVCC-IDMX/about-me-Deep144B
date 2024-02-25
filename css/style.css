@@ -90,3 +90,13 @@ header {
     color: inherit;
     font-weight: bold;
 }
+
+#gallery {
+    border: 2px solid #A5853A;
+
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
