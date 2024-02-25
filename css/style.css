@@ -93,10 +93,44 @@ header {
 
 #gallery {
     border: 2px solid #A5853A;
+    margin-bottom:2rem;
 
 }
 
 #gallery img {
     max-width: 100%;
 }
+
+#lit {
+    Border: 2px solid #221cbe;
+    margin-bottom:2rem;
+}
+
+#lit div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p::first-letter {
+    font-size: 2.5rem; 
+    color: #22db0a; 
+    float: left;
+    padding: 0.10em; 
+    margin-right: 0.2em; 
+    line-height: 0.9; 
+    border: 4px solid #276678; 
+    background-color: #F0F8FF; 
+    border-radius: 4x; 
+    font-family: 'Grenze Gotisch', cursive; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+}
+
+#lit div p::first-letter:hover {
+    transform: scale(1.1); 
+    background-color: #FFFAF0; 
+    color: #276678; 
+}
+
 
