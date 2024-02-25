@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F5587D;
-    color: #FAF4ED;
+    color: #000503;
     margin: 0;
     padding: 0;
     font-smooth: always;
@@ -28,9 +28,9 @@ header {
 }
 
 #hero, footer {
-    color: #919191;
-    border: 2px solid #FAF4ED;
-    background-color: #91F489;
+    color: #000503;
+    border: 2px solid #A5853A;
+    background-color: #FAB005;
     padding: 20px;
     margin: auto;
     max-width: 80%;
