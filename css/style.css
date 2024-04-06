@@ -200,8 +200,78 @@ section#hobbies {
     }
 }
 
-/* Contact Form */
+/* contact form */
+
+#contact {
+    text-align-last: left;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 3rem auto;
+    background-color: #e2f5fe; 
+    color: #333333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+fieldset {
+    border: 2px solid #4A90E2; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 8px; 
+}
+
+legend {
+    background-color: #4A90E2; 
+    color: white;
+    padding: 0.5em 1em; 
+    border-radius: 4px; 
+    font-size: 1.2rem; 
+}
 
 #formElements {
-    display:grid;
+    display: grid;
+    row-gap: 1em; 
+    column-gap: 1em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: 0.75em; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+#contact input:focus, #contact textarea:focus, #contact select:focus {
+    outline: 2px solid #5CB85C;
+    outline-offset: 2px; 
+}
+
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#contact li {
+    margin-bottom: 0.5em; 
+}
+
+#contact button {
+    background-color: #5CB85C; 
+    color: white;
+    border: none; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    margin: 1em auto; 
+    width: auto; 
+    padding: 10px 40px; 
+}
+
+#contact button:hover, #contact button:focus {
+    background-color: #449d44; 
+    transform: translateY(-2px); 
+    outline: none; 
 }
