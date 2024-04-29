@@ -8,13 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="nav.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
-        <img src="lobster-dp.svg" alt="my initials as a logo">
-        <h1>Welcome to My Portfolio!</h1>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="lobster-dp.svg" alt="my initials as a logo">
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation">☰</button>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+    
     <main>
         <section id="hero">
             <img src="avataaars.png" alt="Avatar picture of me">
@@ -24,11 +38,16 @@
             </div>
         </section>
         <section id="bio">
-            <h2>About Me:</h2>
-            <p>Hello! I'm Deep Patel, a Computer Science student at Raritan Valley Community College , specializing in software development. I am passionate about designing intuitive and efficient applications. Besides my technical skills, I enjoy motorcycle riding, offering me a sense of freedom and adventure.</p>
+            <h2>Biography:</h2>
+            <p>Hello! My name is Deep Patel, and I am a dedicated Computer Science student at Raritan Valley Community College, where I specialize in software development. My journey into the world of technology began at a young age, driven by a curiosity about how software applications can solve real-world problems and enhance people's lives. My academic path is focused on developing the skills necessary to create innovative, user-friendly software solutions that are not only functional but also aesthetically pleasing.</p>
+            <p>Throughout my studies, I have engaged in various projects that allowed me to apply theoretical knowledge in practical settings, thereby honing my technical skills and understanding of software engineering principles. I am particularly interested in the areas of mobile and web development, where I have spent countless hours mastering languages such as Java, Python, and JavaScript, as well as frameworks like React and Flutter.</p>
+            <p>One of my significant projects involved developing a personalized mobile application designed to help users manage their daily tasks more effectively. This project taught me valuable lessons in user interface design, data management, and the importance of creating adaptive systems that respond to user feedback and changing requirements.</p>
+            <p>Beyond the confines of programming and software development, I have a profound passion for motorcycle riding. Riding for me is more than just a mode of transport; it's a way to find freedom and adventure. The thrill of cruising on open roads and experiencing the raw beauty of nature is indescribably exhilarating and provides a perfect balance to the meticulous and often sedentary hours spent coding.</p>
+            <p>In addition to riding, I am an avid hiker and photographer. These hobbies allow me to explore and appreciate the outdoors, providing a fresh perspective and continuous inspiration for my creative endeavors in technology. Each trail hiked and every snapshot taken enhances my appreciation for the intricate details of the natural world, which parallels the complexity and beauty of software development.</p>
+            <p>As I continue my educational journey, my goal is to fuse my technical capabilities with my creative passions to develop software that enhances the quality of life for users and encourages them to explore the world around them. I look forward to the opportunities and challenges that lie ahead in my career as a software developer.</p>
         </section>
         <section id="hobbies">
-            <h2>My Hobbies:</h2>
+            <h2>Hobbies:</h2>
             <p>I engage in various activities that fuel my creativity and keep me active:</p>
             <ul>
                 <li><strong>Hiking:</strong> Exploring nature trails and enjoying the tranquility of the outdoors.</li>
@@ -49,27 +68,70 @@
             </figure>
             <figure>
                 <img src="wood-logs.jpg" alt="wood log from unsplash">
-                <figcaption>wood-logs</figcaption>
+                <figcaption>Wood Logs</figcaption>
             </figure>
         </section>
+        <article id="lit">
+            <h2>Unlocking the Magic of CSS Animation</h2>
+            <div>
+                <p>In the world of web design, CSS animations breathe life into static pages, transforming user interactions into vibrant, dynamic experiences. This tool is more than just a means to attract attention—it's a way to enhance storytelling, guide user behavior, and improve the overall aesthetic of digital spaces.</p>
+                <p>CSS animation allows elements on a webpage to transition from one style to another. These transformations can be simple, like changing the color of a button when hovered over, or complex, like animating graphics as a page scrolls. What sets CSS animations apart is their ability to be both powerful and lightweight, ensuring web pages remain fast and responsive.</p>
+                <p>At its core, CSS animation is driven by two key components: the `@keyframes` rule and the animation properties. `@keyframes` define the sequence of styles that the animation will go through from start to finish. Practical applications of CSS animations include enhancing navigation, drawing attention to important areas, and providing responsive feedback to user interactions.</p>
+                <p>Despite their advantages, CSS animations must be used wisely. Overusing animations can detract from the user experience, and poorly implemented animations can hinder performance, especially on mobile devices. However, when used judiciously, animations can make a website not just more attractive but also more intuitive and responsive to user needs.</p>
+                <p>By mastering CSS animations, developers can create more engaging, interactive, and memorable websites that stand out in the digital landscape. Whether you’re looking to add a simple hover effect or a full-page animation sequence, CSS animations provide the tools you need to bring your creative visions to life.</p>
+            </div>
+        </article>
         <section id="contact">
-            <h2>Contact Me:</h2>
+            <h2>Contact Us:</h2>
             <form id="contactForm" name="contactForm" method="post" data-netlify="true">
                 <fieldset>
-                    <legend>Contact Information</legend>
-                    <label for="name">Name (required)</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email (required)</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message (optional)</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                    <legend>Contact Form</legend>
+                    <div id="formElements">
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phonetype">Phone type (optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value="" selected>Select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" rows="8"></textarea>
+                        <fieldset>
+                            <legend>Would you like a reply?</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                    <label for="message-yes">Yes a reply would be nice.</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please." checked>
+                                    <label for="message-no">No, thanks.</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button type="submit">Send</button>
+                    </div>
                 </fieldset>
-                <input type="submit" value="Send Message">
             </form>
         </section>
     </main>
     <footer>
         <p>Copyright &copy; 2024 Deep Patel. All Rights Reserved.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.navbar-links');
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>

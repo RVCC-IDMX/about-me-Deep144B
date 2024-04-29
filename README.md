@@ -18,7 +18,7 @@ Through the development of this portfolio, I've honed skills essential for moder
 
 ### Color Scheme
 
-[Color Contrast Samples](![alt text](<Screenshot 2024-04-28 003841-1.png>))
+![Color Contrast Samples](screenshot.png)
 
 My design choices are intentional and align with accessibility standards:
 
@@ -53,3 +53,31 @@ Each combination ensures content is accessible and pleasant to read.
 
 This project is open-sourced under the MIT License, supporting the open exchange of knowledge while respecting creator attribution.
 
+## References
+
+Here are some key resources I used to enhance my understanding of CSS Animations and support the content of my blog article:
+
+1. **MDN Web Docs - Using CSS Animations:** This guide offers a comprehensive overview of CSS animations, from basics to advanced usage. [Visit MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+2. **CSS-Tricks - A Guide to CSS Animation:** An excellent resource for practical examples and deeper insights into CSS animation techniques. [Visit CSS-Tricks](https://css-tricks.com/almanac/properties/a/animation/)
+3. **A List Apart - Animation at Work:** Discusses the role of animations in web design and how to use them effectively to improve user experiences. [Visit A List Apart](https://alistapart.com/article/animation-at-work/)
+
+## Hamburger Menu Integration
+
+### Overview
+The latest update introduces a responsive hamburger menu to improve mobile accessibility. This feature allows for a clutter-free navigation experience across various devices.
+
+### Features
+- **Responsive Design**: Adjusts between desktop and mobile views seamlessly.
+- **Interactive UI**: Features smooth navigation and collapsible menu for enhanced user experience.
+
+### Implementation
+- **HTML**: Includes a `.hamburger` button class visible only on devices with a width less than 768 pixels.
+- **CSS**: Managed within `nav.css`, with media queries for responsive adjustments.
+- **JavaScript**: Toggles the navigation links visibility based on user interactions.
+
+### Usage
+The hamburger menu can be tested by resizing the browser to under 768 pixels width or on a mobile device. Clicking the hamburger icon toggles the navigation links.
+
+### Code and Future Plans
+- **Source Code**: Available in `index.html`, `nav.css`, and `script.js`.
+- **Future Enhancements**: Plans include refining UI animations and boosting accessibility based on user feedback.
